@@ -1,6 +1,6 @@
 if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7449423635 then
 --                 sea                            sea                              sea       
-    _G.Color = Color3.fromRGB(255,0,0)
+    _G.Color = Color3.fromRGB(148,0,211)
     if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
     
     repeat wait() until game:GetService("Players")
@@ -124,7 +124,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
         NameHub.Size = UDim2.new(0, 110, 0, 20)
         NameHub.Font = Enum.Font.GothamSemibold
         NameHub.Text = text
-        NameHub.TextColor3 = Color3.fromRGB(225, 0, 0)
+        NameHub.TextColor3 = Color3.fromRGB(148, 0, 211)
         NameHub.TextSize = 11.000
         NameHub.TextXAlignment = Enum.TextXAlignment.Left
     
@@ -151,7 +151,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
                     wait(0.1) 
                     game:GetService('TweenService'):Create(
                         UserText,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
-                        {TextColor3 = Color3.fromRGB(255, 0, 0)}
+                        {TextColor3 = Color3.fromRGB(148, 0, 211)}
                     ):Play() 
                     wait(.5)            
                     game:GetService('TweenService'):Create(
@@ -338,7 +338,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
                     TweenService:Create(
                         PageButton,
                         TweenInfo.new(0.3,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-                        {TextColor3 = Color3.fromRGB(255,0,0)}
+                        {TextColor3 = Color3.fromRGB(148,0,211)}
                     ):Play()
                 end
             end)
@@ -347,7 +347,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
                 TweenService:Create(
                     PageButton,
                     TweenInfo.new(0.3,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-                    {TextColor3 = Color3.fromRGB(255,0,0)}
+                    {TextColor3 = Color3.fromRGB(148,0,211)}
                 ):Play()
                 for i,v in next, TabFolder:GetChildren() do 
                     if v.Name == "MainTab" then
@@ -392,7 +392,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
                     TweenService:Create(
                         Button,
                         TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-                        {TextColor3 = Color3.fromRGB(255,0,0)}
+                        {TextColor3 = Color3.fromRGB(148,0,211)}
                     ):Play()
                 end)
                 
@@ -464,7 +464,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
                 ToggleImage2.Name = "ToggleImage2"
                 ToggleImage2.Parent = ToggleImage
                 ToggleImage2.AnchorPoint = Vector2.new(0.5, 0.5)
-                ToggleImage2.BackgroundColor3 = Color3.fromRGB(255,0,0)
+                ToggleImage2.BackgroundColor3 = Color3.fromRGB(148,0,211)
                 ToggleImage2.Position = UDim2.new(0, 10, 0, 10)
                 ToggleImage2.Visible = false
     
@@ -477,7 +477,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
                     TweenService:Create(
                         ToggleLabel,
                         TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-                        {TextColor3 = Color3.fromRGB(255,0,0)}
+                        {TextColor3 = Color3.fromRGB(148,0,211)}
                     ):Play()
                 end)
     
@@ -657,7 +657,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
                         TweenService:Create(
                             DropButton2,
                             TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-                            {TextColor3 = Color3.fromRGB(255,0,0)}
+                            {TextColor3 = Color3.fromRGB(148,0,211)}
                         ):Play()
                     end)
                     DropButton2.MouseLeave:Connect(function()
@@ -833,7 +833,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
     
                 Bar.Name = "Bar"
                 Bar.Parent = Bar1
-                Bar.BackgroundColor3 = Color3.fromRGB(255,0,0)
+                Bar.BackgroundColor3 = Color3.fromRGB(148,0,211)
                 Bar.Size = UDim2.new(set/max, 0, 0, 5)
     
                 UICorner_2.CornerRadius = UDim.new(0, 100)
@@ -913,7 +913,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
     
                 Sep1.Name = "Sep1"
                 Sep1.Parent = Seperator
-                Sep1.BackgroundColor3 = Color3.fromRGB(255,0,0)
+                Sep1.BackgroundColor3 = Color3.fromRGB(148,0,211)
                 Sep1.BorderSizePixel = 0
                 Sep1.Position = UDim2.new(0, 0, 0, 10)
                 Sep1.Size = UDim2.new(0, 150, 0, 1)
@@ -931,7 +931,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
     
                 Sep2.Name = "Sep2"
                 Sep2.Parent = Seperator
-                Sep2.BackgroundColor3 = Color3.fromRGB(255,0,0)
+                Sep2.BackgroundColor3 = Color3.fromRGB(148,0,211)
                 Sep2.BorderSizePixel = 0
                 Sep2.Position = UDim2.new(0, 305, 0, 10)
                 Sep2.Size = UDim2.new(0, 150, 0, 1)
@@ -949,7 +949,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
     
                 Linee.Name = "Linee"
                 Linee.Parent = Line
-                Linee.BackgroundColor3 = Color3.fromRGB(255,0,0)
+                Linee.BackgroundColor3 = Color3.fromRGB(148,0,211)
                 Linee.BorderSizePixel = 0
                 Linee.Position = UDim2.new(0, 0, 0, 10)
                 Linee.Size = UDim2.new(0, 455, 0, 1)
@@ -1571,7 +1571,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
                         if v.Team == game:GetService("Players").LocalPlayer.Team then
                             ESP.TextColor3 = Color3.new(0, 255, 255)
                         else
-                            ESP.TextColor3 = Color3.new(255, 0, 0)
+                            ESP.TextColor3 = Color3.new(148, 0, 211)
                         end
                         ESP.TextSize = 14
                         ESP.TextStrokeTransparency = 0.500
@@ -1583,7 +1583,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
                         HealthESP.Position = ESP.Position + UDim2.new(0, -25, 0, 15)
                         HealthESP.Size = UDim2.new(0, 200, 0, 30)
                         HealthESP.Font = Enum.Font.Gotham
-                        HealthESP.TextColor3 = Color3.fromRGB(255, 0, 0)
+                        HealthESP.TextColor3 = Color3.fromRGB(148, 0, 211)
                         HealthESP.TextSize = 14
                         HealthESP.TextStrokeTransparency = 0.500
                         HealthESP.TextWrapped = true
@@ -1705,7 +1705,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
                             name.TextYAlignment = 'Top'
                             name.BackgroundTransparency = 1
                             name.TextStrokeTransparency = 0.5
-                            name.TextColor3 = Color3.fromRGB(255, 0, 0)
+                            name.TextColor3 = Color3.fromRGB(148, 0, 211)
                             name.Text = (v.Name ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' M')
                         else
                             v.Handle['NameEsp'..Number].TextLabel.Text = (v.Name ..'   \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' M')
@@ -1740,14 +1740,14 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
                             name.TextYAlignment = 'Top'
                             name.BackgroundTransparency = 1
                             name.TextStrokeTransparency = 0.5
-                            name.TextColor3 = Color3.fromRGB(255, 0, 0)
+                            name.TextColor3 = Color3.fromRGB(148, 0, 211)
                         if v.Name == "Flower1" then 
                             name.Text = ("Blue Flower" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' M')
                             name.TextColor3 = Color3.fromRGB(0, 0, 255)
                         end
                         if v.Name == "Flower2" then
                             name.Text = ("Red Flower" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' M')
-                            name.TextColor3 = Color3.fromRGB(255, 0, 0)
+                            name.TextColor3 = Color3.fromRGB(148, 0, 211)
                         end
                     else
                         v['NameEsp'..Number].TextLabel.Text = (v.Name ..'   \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' M')
@@ -2083,7 +2083,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
     Toggle.Size = UDim2.new(0, 50, 0, 50)
     Toggle.Font = Enum.Font.Code
     Toggle.Text = "R"
-    Toggle.TextColor3 = Color3.fromRGB(255, 0, 0)
+    Toggle.TextColor3 = Color3.fromRGB(148, 0, 211)
     Toggle.TextScaled = true
     Toggle.MouseButton1Down:connect(function()
         game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game)
@@ -6567,7 +6567,7 @@ if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7
         _G.SkillV = value
     end)
 elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId == 5931540094 or game.PlaceId == 5931540094 then
-    _G.Color = Color3.fromRGB(255,0,0)
+    _G.Color = Color3.fromRGB(148,0,211)
     if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
     
     repeat wait() until game:GetService("Players")
@@ -6691,7 +6691,7 @@ elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId 
         NameHub.Size = UDim2.new(0, 110, 0, 20)
         NameHub.Font = Enum.Font.GothamSemibold
         NameHub.Text = text
-        NameHub.TextColor3 = Color3.fromRGB(225, 0, 0)
+        NameHub.TextColor3 = Color3.fromRGB(148, 0, 211)
         NameHub.TextSize = 11.000
         NameHub.TextXAlignment = Enum.TextXAlignment.Left
     
@@ -6718,7 +6718,7 @@ elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId 
                     wait(0.1) 
                     game:GetService('TweenService'):Create(
                         UserText,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
-                        {TextColor3 = Color3.fromRGB(255, 0, 0)}
+                        {TextColor3 = Color3.fromRGB(148, 0, 211)}
                     ):Play() 
                     wait(.5)            
                     game:GetService('TweenService'):Create(
@@ -6905,7 +6905,7 @@ elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId 
                     TweenService:Create(
                         PageButton,
                         TweenInfo.new(0.3,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-                        {TextColor3 = Color3.fromRGB(255,0,0)}
+                        {TextColor3 = Color3.fromRGB(148,0,211)}
                     ):Play()
                 end
             end)
@@ -6914,7 +6914,7 @@ elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId 
                 TweenService:Create(
                     PageButton,
                     TweenInfo.new(0.3,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-                    {TextColor3 = Color3.fromRGB(255,0,0)}
+                    {TextColor3 = Color3.fromRGB(148,0,211)}
                 ):Play()
                 for i,v in next, TabFolder:GetChildren() do 
                     if v.Name == "MainTab" then
@@ -6959,7 +6959,7 @@ elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId 
                     TweenService:Create(
                         Button,
                         TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-                        {TextColor3 = Color3.fromRGB(255,0,0)}
+                        {TextColor3 = Color3.fromRGB(148,0,211)}
                     ):Play()
                 end)
                 
@@ -7031,7 +7031,7 @@ elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId 
                 ToggleImage2.Name = "ToggleImage2"
                 ToggleImage2.Parent = ToggleImage
                 ToggleImage2.AnchorPoint = Vector2.new(0.5, 0.5)
-                ToggleImage2.BackgroundColor3 = Color3.fromRGB(255,0,0)
+                ToggleImage2.BackgroundColor3 = Color3.fromRGB(148,0,211)
                 ToggleImage2.Position = UDim2.new(0, 10, 0, 10)
                 ToggleImage2.Visible = false
     
@@ -7044,7 +7044,7 @@ elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId 
                     TweenService:Create(
                         ToggleLabel,
                         TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-                        {TextColor3 = Color3.fromRGB(255,0,0)}
+                        {TextColor3 = Color3.fromRGB(148,0,211)}
                     ):Play()
                 end)
     
@@ -7224,7 +7224,7 @@ elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId 
                         TweenService:Create(
                             DropButton2,
                             TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-                            {TextColor3 = Color3.fromRGB(255,0,0)}
+                            {TextColor3 = Color3.fromRGB(148,0,211)}
                         ):Play()
                     end)
                     DropButton2.MouseLeave:Connect(function()
@@ -7400,7 +7400,7 @@ elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId 
     
                 Bar.Name = "Bar"
                 Bar.Parent = Bar1
-                Bar.BackgroundColor3 = Color3.fromRGB(255,0,0)
+                Bar.BackgroundColor3 = Color3.fromRGB(148,0,211)
                 Bar.Size = UDim2.new(set/max, 0, 0, 5)
     
                 UICorner_2.CornerRadius = UDim.new(0, 100)
@@ -7480,7 +7480,7 @@ elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId 
     
                 Sep1.Name = "Sep1"
                 Sep1.Parent = Seperator
-                Sep1.BackgroundColor3 = Color3.fromRGB(255,0,0)
+                Sep1.BackgroundColor3 = Color3.fromRGB(148,0,211)
                 Sep1.BorderSizePixel = 0
                 Sep1.Position = UDim2.new(0, 0, 0, 10)
                 Sep1.Size = UDim2.new(0, 150, 0, 1)
@@ -7498,7 +7498,7 @@ elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId 
     
                 Sep2.Name = "Sep2"
                 Sep2.Parent = Seperator
-                Sep2.BackgroundColor3 = Color3.fromRGB(255,0,0)
+                Sep2.BackgroundColor3 = Color3.fromRGB(148,0,211)
                 Sep2.BorderSizePixel = 0
                 Sep2.Position = UDim2.new(0, 305, 0, 10)
                 Sep2.Size = UDim2.new(0, 150, 0, 1)
@@ -7516,7 +7516,7 @@ elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId 
     
                 Linee.Name = "Linee"
                 Linee.Parent = Line
-                Linee.BackgroundColor3 = Color3.fromRGB(255,0,0)
+                Linee.BackgroundColor3 = Color3.fromRGB(148,0,211)
                 Linee.BorderSizePixel = 0
                 Linee.Position = UDim2.new(0, 0, 0, 10)
                 Linee.Size = UDim2.new(0, 455, 0, 1)
@@ -7566,7 +7566,7 @@ elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId 
     Toggle.Size = UDim2.new(0, 50, 0, 50)
     Toggle.Font = Enum.Font.Code
     Toggle.Text = "R"
-    Toggle.TextColor3 = Color3.fromRGB(255, 0, 0)
+    Toggle.TextColor3 = Color3.fromRGB(148, 0, 211)
     Toggle.TextScaled = true
     Toggle.MouseButton1Down:connect(function()
         game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game)
@@ -7780,7 +7780,7 @@ elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId 
                             name.TextYAlignment = 'Top'
                             name.BackgroundTransparency = 1
                             name.TextStrokeTransparency = 0.5
-                            name.TextColor3 = Color3.fromRGB(255, 0, 0)
+                            name.TextColor3 = Color3.fromRGB(148, 0, 211)
                             name.Text = (v.Name ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' M')
                         else
                             v.Handle['NameEsp'..Number].TextLabel.Text = (v.Name ..'   \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' M')
@@ -9485,7 +9485,7 @@ elseif game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId 
         end
     end)
 elseif game.PlaceId == 6329844902 then
-    _G.Color = Color3.fromRGB(255,0,0)
+    _G.Color = Color3.fromRGB(148,0,211)
     if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
     
     repeat wait() until game:GetService("Players")
@@ -9609,7 +9609,7 @@ elseif game.PlaceId == 6329844902 then
         NameHub.Size = UDim2.new(0, 110, 0, 20)
         NameHub.Font = Enum.Font.GothamSemibold
         NameHub.Text = text
-        NameHub.TextColor3 = Color3.fromRGB(225, 0, 0)
+        NameHub.TextColor3 = Color3.fromRGB(148, 0, 211)
         NameHub.TextSize = 11.000
         NameHub.TextXAlignment = Enum.TextXAlignment.Left
     
@@ -9636,7 +9636,7 @@ elseif game.PlaceId == 6329844902 then
                     wait(0.1) 
                     game:GetService('TweenService'):Create(
                         UserText,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
-                        {TextColor3 = Color3.fromRGB(255, 0, 0)}
+                        {TextColor3 = Color3.fromRGB(148, 0, 211)}
                     ):Play() 
                     wait(.5)            
                     game:GetService('TweenService'):Create(
@@ -9823,7 +9823,7 @@ elseif game.PlaceId == 6329844902 then
                     TweenService:Create(
                         PageButton,
                         TweenInfo.new(0.3,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-                        {TextColor3 = Color3.fromRGB(255,0,0)}
+                        {TextColor3 = Color3.fromRGB(148,0,211)}
                     ):Play()
                 end
             end)
@@ -9832,7 +9832,7 @@ elseif game.PlaceId == 6329844902 then
                 TweenService:Create(
                     PageButton,
                     TweenInfo.new(0.3,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-                    {TextColor3 = Color3.fromRGB(255,0,0)}
+                    {TextColor3 = Color3.fromRGB(148,0,211)}
                 ):Play()
                 for i,v in next, TabFolder:GetChildren() do 
                     if v.Name == "MainTab" then
@@ -9877,7 +9877,7 @@ elseif game.PlaceId == 6329844902 then
                     TweenService:Create(
                         Button,
                         TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-                        {TextColor3 = Color3.fromRGB(255,0,0)}
+                        {TextColor3 = Color3.fromRGB(148,0,211)}
                     ):Play()
                 end)
                 
@@ -9949,7 +9949,7 @@ elseif game.PlaceId == 6329844902 then
                 ToggleImage2.Name = "ToggleImage2"
                 ToggleImage2.Parent = ToggleImage
                 ToggleImage2.AnchorPoint = Vector2.new(0.5, 0.5)
-                ToggleImage2.BackgroundColor3 = Color3.fromRGB(255,0,0)
+                ToggleImage2.BackgroundColor3 = Color3.fromRGB(148,0,211)
                 ToggleImage2.Position = UDim2.new(0, 10, 0, 10)
                 ToggleImage2.Visible = false
     
@@ -9962,7 +9962,7 @@ elseif game.PlaceId == 6329844902 then
                     TweenService:Create(
                         ToggleLabel,
                         TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-                        {TextColor3 = Color3.fromRGB(255,0,0)}
+                        {TextColor3 = Color3.fromRGB(148,0,211)}
                     ):Play()
                 end)
     
@@ -10142,7 +10142,7 @@ elseif game.PlaceId == 6329844902 then
                         TweenService:Create(
                             DropButton2,
                             TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-                            {TextColor3 = Color3.fromRGB(255,0,0)}
+                            {TextColor3 = Color3.fromRGB(148,0,211)}
                         ):Play()
                     end)
                     DropButton2.MouseLeave:Connect(function()
@@ -10318,7 +10318,7 @@ elseif game.PlaceId == 6329844902 then
     
                 Bar.Name = "Bar"
                 Bar.Parent = Bar1
-                Bar.BackgroundColor3 = Color3.fromRGB(255,0,0)
+                Bar.BackgroundColor3 = Color3.fromRGB(148,0,211)
                 Bar.Size = UDim2.new(set/max, 0, 0, 5)
     
                 UICorner_2.CornerRadius = UDim.new(0, 100)
@@ -10398,7 +10398,7 @@ elseif game.PlaceId == 6329844902 then
     
                 Sep1.Name = "Sep1"
                 Sep1.Parent = Seperator
-                Sep1.BackgroundColor3 = Color3.fromRGB(255,0,0)
+                Sep1.BackgroundColor3 = Color3.fromRGB(148,0,211)
                 Sep1.BorderSizePixel = 0
                 Sep1.Position = UDim2.new(0, 0, 0, 10)
                 Sep1.Size = UDim2.new(0, 150, 0, 1)
@@ -10416,7 +10416,7 @@ elseif game.PlaceId == 6329844902 then
     
                 Sep2.Name = "Sep2"
                 Sep2.Parent = Seperator
-                Sep2.BackgroundColor3 = Color3.fromRGB(255,0,0)
+                Sep2.BackgroundColor3 = Color3.fromRGB(148,0,211)
                 Sep2.BorderSizePixel = 0
                 Sep2.Position = UDim2.new(0, 305, 0, 10)
                 Sep2.Size = UDim2.new(0, 150, 0, 1)
@@ -10434,7 +10434,7 @@ elseif game.PlaceId == 6329844902 then
     
                 Linee.Name = "Linee"
                 Linee.Parent = Line
-                Linee.BackgroundColor3 = Color3.fromRGB(255,0,0)
+                Linee.BackgroundColor3 = Color3.fromRGB(148,0,211)
                 Linee.BorderSizePixel = 0
                 Linee.Position = UDim2.new(0, 0, 0, 10)
                 Linee.Size = UDim2.new(0, 455, 0, 1)
@@ -10484,7 +10484,7 @@ elseif game.PlaceId == 6329844902 then
     Toggle.Size = UDim2.new(0, 50, 0, 50)
     Toggle.Font = Enum.Font.Code
     Toggle.Text = "R"
-    Toggle.TextColor3 = Color3.fromRGB(255, 0, 0)
+    Toggle.TextColor3 = Color3.fromRGB(148, 0, 211)
     Toggle.TextScaled = true
     Toggle.MouseButton1Down:connect(function()
         game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game)
